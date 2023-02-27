@@ -3,7 +3,8 @@
 
 const express = require("express");
 const bcrypt = require('bcryptjs');
-const cors = require('cors');
+//cors is for local development
+//const cors = require('cors');
 const knex = require('knex');
 
 const register = require('./controllers/register');
@@ -25,7 +26,8 @@ const db = knex({
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+//cors is for local development
+//app.use(cors());
 
 app.get('/', (req, res) => {
     res.send('success');
