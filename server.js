@@ -1,4 +1,5 @@
-require('dotenv').config();
+//only required for local hosting
+//require('dotenv').config();
 
 const express = require("express");
 const bcrypt = require('bcryptjs');
